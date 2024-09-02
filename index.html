@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
+    
     
     <header>
         <a href="#" class= "MiPortfolio">
@@ -14,14 +16,28 @@
             <h1>Mi Portfolio</h1>
         </a>
         
-        <nav>
-            <a href="#QuienSoy" class="nav-link">Sobre Mi</a>
-            <a href="#QueHice" class="nav-link">Experiencias</a>
-            <a href="#Fotografías" class="nav-link">Fotografías</a>
-            <a href="#formulario" class="nav-link">Contacto</a>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </div>
+
+            <ul class="menu" id="menu">
+                <li class="menu-item dropdown">
+                    <a href="#">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#QuienSoy" class="nav-link">Sobre Mi</a></li>
+                        <li><a href="#QueHice" class="nav-link">Experiencias</a></li>
+                        <li><a href="#Fotografías" class="nav-link">Fotografías</a></li>
+                        <li><a href="#formulario" class="nav-link">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
-    
+    <div class=“container”> 
+        <div class=“row>
+            <div class="col-xs-12 col-sm-8 col-lg-12"></div> 
+
         <section id="QuienSoy">
             <h2 class="selector-titulo">¿Quién soy?</h2>
             <p class="selector-descripcion">
@@ -97,7 +113,8 @@
                     <input type="submit" value="Enviar">
                 </form>
         </section>
-
+    </div>
+</div>
 
 
     
